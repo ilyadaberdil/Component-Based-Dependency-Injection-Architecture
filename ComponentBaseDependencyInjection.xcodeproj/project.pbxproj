@@ -103,6 +103,7 @@
 		3987DBCA23F20947009A9EE2 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				3987DBCB23F20954009A9EE2 /* Dependency.swift */,
 			);
 			path = Dependency;
 			sourceTree = "<group>";
@@ -115,7 +116,6 @@
 				393245F023EF17FE00876BDC /* SceneDelegate.swift */,
 				393245F723EF180200876BDC /* Assets.xcassets */,
 				393245F923EF180200876BDC /* LaunchScreen.storyboard */,
-				3987DBCB23F20954009A9EE2 /* Dependency.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
