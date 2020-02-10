@@ -12,10 +12,10 @@
 		393245F323EF17FE00876BDC /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393245F223EF17FE00876BDC /* FirstScreenViewController.swift */; };
 		393245F823EF180200876BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393245F723EF180200876BDC /* Assets.xcassets */; };
 		393245FB23EF180200876BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393245F923EF180200876BDC /* LaunchScreen.storyboard */; };
-		3932460723EF184300876BDC /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932460623EF184300876BDC /* Dependencies.swift */; };
 		3932460923EF185800876BDC /* FirstScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932460823EF185800876BDC /* FirstScreenPresenter.swift */; };
 		3932460B23EF186200876BDC /* FirstScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932460A23EF186200876BDC /* FirstScreenRouter.swift */; };
 		3932460D23EF187000876BDC /* FirstScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932460C23EF187000876BDC /* FirstScreenBuilder.swift */; };
+		3987DBCC23F20954009A9EE2 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987DBCB23F20954009A9EE2 /* Dependency.swift */; };
 		39B6F78B23EF2F27006747F5 /* SecondScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6F78A23EF2F27006747F5 /* SecondScreenBuilder.swift */; };
 		39B6F78D23EF2F3F006747F5 /* SecondScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6F78C23EF2F3F006747F5 /* SecondScreenRouter.swift */; };
 		39B6F78F23EF2F54006747F5 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6F78E23EF2F54006747F5 /* SecondScreenPresenter.swift */; };
@@ -30,10 +30,10 @@
 		393245F723EF180200876BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		393245FA23EF180200876BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		393245FC23EF180200876BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3932460623EF184300876BDC /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		3932460823EF185800876BDC /* FirstScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenter.swift; sourceTree = "<group>"; };
 		3932460A23EF186200876BDC /* FirstScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenRouter.swift; sourceTree = "<group>"; };
 		3932460C23EF187000876BDC /* FirstScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenBuilder.swift; sourceTree = "<group>"; };
+		3987DBCB23F20954009A9EE2 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 		39B6F78A23EF2F27006747F5 /* SecondScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenBuilder.swift; sourceTree = "<group>"; };
 		39B6F78C23EF2F3F006747F5 /* SecondScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenRouter.swift; sourceTree = "<group>"; };
 		39B6F78E23EF2F54006747F5 /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		393245ED23EF17FE00876BDC /* ComponentBaseDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				3987DBCA23F20947009A9EE2 /* Dependency */,
 				399DB88D23EF2740007521C0 /* Supporting Files */,
-				3932460523EF183700876BDC /* Dependencies */,
 				3932460323EF181500876BDC /* Second */,
 				3932460223EF180900876BDC /* First */,
 			);
@@ -100,12 +100,11 @@
 			path = Second;
 			sourceTree = "<group>";
 		};
-		3932460523EF183700876BDC /* Dependencies */ = {
+		3987DBCA23F20947009A9EE2 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
-				3932460623EF184300876BDC /* Dependencies.swift */,
 			);
-			path = Dependencies;
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		399DB88D23EF2740007521C0 /* Supporting Files */ = {
@@ -116,6 +115,7 @@
 				393245F023EF17FE00876BDC /* SceneDelegate.swift */,
 				393245F723EF180200876BDC /* Assets.xcassets */,
 				393245F923EF180200876BDC /* LaunchScreen.storyboard */,
+				3987DBCB23F20954009A9EE2 /* Dependency.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,11 +192,11 @@
 			files = (
 				39B6F79123EF2F65006747F5 /* SecondScreenViewController.swift in Sources */,
 				39B6F78F23EF2F54006747F5 /* SecondScreenPresenter.swift in Sources */,
-				3932460723EF184300876BDC /* Dependencies.swift in Sources */,
 				393245F323EF17FE00876BDC /* FirstScreenViewController.swift in Sources */,
 				3932460D23EF187000876BDC /* FirstScreenBuilder.swift in Sources */,
 				393245EF23EF17FE00876BDC /* AppDelegate.swift in Sources */,
 				393245F123EF17FE00876BDC /* SceneDelegate.swift in Sources */,
+				3987DBCC23F20954009A9EE2 /* Dependency.swift in Sources */,
 				3932460B23EF186200876BDC /* FirstScreenRouter.swift in Sources */,
 				39B6F78D23EF2F3F006747F5 /* SecondScreenRouter.swift in Sources */,
 				3932460923EF185800876BDC /* FirstScreenPresenter.swift in Sources */,
